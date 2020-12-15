@@ -1,0 +1,51 @@
+
+.main_wrapper {
+    display: grid;
+    grid-area: mama;
+    background: white;
+    grid-template-columns: 422px 422px 422px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "mad1 mad2 mad3"
+    "mas1 mas2 mas3"
+    ;
+}
+
+
+.section_wrapper {
+    display: flex;
+    width: 30%;
+    height: 300px;
+}
+
+
+#flex_wrapper_main {
+    grid-area: mama;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.section_wrapper_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "s2di"
+    "s2ar"
+    ;
+
+}
+
+.section_wrapper_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "sedi"
+    "sear"
+    ;
+
+}

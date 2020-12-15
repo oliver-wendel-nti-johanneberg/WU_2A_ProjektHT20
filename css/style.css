@@ -23,11 +23,45 @@
     background: lightgreen;
 }
 
-#nav_nav_1 {
+#flex_wrapper {
     grid-area: nana;
     background: lightpink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+
 }
 
+.nav_list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.nav_link:hover {
+    color: orange;
+}
+
+.nav_link:visited {
+    color: white;
+}
+
+.nav_link:active {
+    color: white
+}
+
+#nav_link_4 {
+    padding-right: 50px;
+}
 
 
 .grid_wrapper {
@@ -35,7 +69,7 @@
     width: 98.7vw;
     height: 1556px;
     grid-template-columns: 1fr;
-    grid-template-rows: 628px 628px 300px;
+    grid-template-rows: 628px 1280px 300px;
     grid-template-areas: 
     "hema"
     "mama"
@@ -48,13 +82,21 @@
 .header_wrapper {
     background: lightblue;
     grid-area: hema;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
+
+
 
 .main_wrapper {
     display: grid;
     grid-area: mama;
     background: white;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 422px 422px 422px;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 
     "mad1 mad2 mad3"
@@ -62,14 +104,31 @@
     ;
 }
 
+
+.header_text {
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    text-align-last: center;
+    text-align: center;
+}
+
 .main_div {
     margin: 60px;
     margin-bottom: 0px;
+
 }
 
 .main_article {
     margin: 60px;
     margin-top: 0px;
+}
+
+
+.main_article {
+    display: flex;
+    width: 30%;
+    height: 300px;
 }
 
 #main_div_main_1 {
@@ -104,6 +163,112 @@
 
 .footer_wrapper {
     grid-area: foma;
-    background: lightgreen
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas: 
+    "foa1 fodi foa2"
+    "foa1 fose foa2"
+    ;
 }
 
+#footer_aside_1 {
+    grid-area: foa1;
+    background: lightblue;
+}
+
+#footer_aside_2 {
+    grid-area: foa2;
+    background: lightgreen;
+}
+
+#footer_div {
+    grid-area: fodi;
+    background: khaki;
+}
+
+#footer_section {
+    grid-area: fose;
+    background: limegreen;
+}
+
+.grid_wrapper_underhallning {
+    display: grid;
+    width: 98.7vw;
+    height: 2184px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 628px 1268px 300px;
+    grid-template-areas: 
+    "hema"
+    "maun"
+    "foma"
+    ;
+}
+
+.main_wrapper_underhallning {
+    display: grid;
+    grid-area: maun;
+    background: white;
+    grid-template-columns: 1268px;
+    grid-template-rows: 1fr;
+    grid-template-areas: none
+    ;
+}
+
+.section_wrapper {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+
+#section_wrapper_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "sedi"
+    "sear"
+    ;
+
+}
+
+#section_wrapper_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "sedi"
+    "sear"
+    ;
+
+}
+
+#section_wrapper_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "sedi"
+    "sear"
+    ;
+}
+
+.main_article_t {
+    grid-area: sear;
+    background: lightgoldenrodyellow;
+}
+
+.main_div_t {
+    grid-area: sedi;
+    background: lightgreen;
+}
+
+.flex_wrapper_main {
+    grid-area: mama;
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    background: white;
+    align-content: center;
+    justify-content: space-around;
+} 
